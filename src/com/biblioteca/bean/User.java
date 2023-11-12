@@ -6,7 +6,6 @@ public abstract class User {
     private String name;
     private String password;
     private String ID;
-
     private boolean isPremium;
 
     ArrayList<ResourcesLibrary> loan = new ArrayList<ResourcesLibrary>();
