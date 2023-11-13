@@ -5,16 +5,16 @@ import java.util.ArrayList;
 public abstract class User {
     private String name;
     private String password;
-    private String ID;
+    private String user;
 
     private boolean isPremium;
 
     ArrayList<ResourcesLibrary> loan = new ArrayList<ResourcesLibrary>();
 
-    public User(String name, String password, String ID, ArrayList<ResourcesLibrary> loan, boolean isPremium) {
+    public User(String name, String password, String user, ArrayList<ResourcesLibrary> loan, boolean isPremium) {
         this.name = name;
         this.password = password;
-        this.ID = ID;
+        this.user = user;
         this.loan = loan;
         this.isPremium = isPremium;
     }
@@ -36,11 +36,11 @@ public abstract class User {
     }
 
     public String getID() {
-        return ID;
+        return user;
     }
 
     public void setID(String ID) {
-        this.ID = ID;
+        this.user = user;
     }
 
     public ArrayList<ResourcesLibrary> getLoan() {
