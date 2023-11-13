@@ -19,4 +19,9 @@ public class PremiumUser extends User {
     public void register() {
 
     }
+
+    @Override
+    public void changePassword() {
+        
+    }
 }

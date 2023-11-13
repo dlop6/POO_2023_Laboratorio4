@@ -17,4 +17,9 @@ public class BaseUser extends User {
     public void register() {
 
     }
+
+    @Override
+    public void changePassword() {
+
+    }
 }
