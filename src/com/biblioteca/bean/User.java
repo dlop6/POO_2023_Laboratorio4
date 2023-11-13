@@ -56,6 +56,8 @@ public abstract class User {
 
     public abstract void register();
 
+    public abstract void changePassword();
+
     public boolean isPremium() {
         return isPremium;
     }
