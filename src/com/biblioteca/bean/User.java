@@ -7,7 +7,6 @@ public abstract class User {
     private String password;
     private String user;
 
-
     private boolean isPremium;
 
     ArrayList<ResourcesLibrary> loan = new ArrayList<ResourcesLibrary>();
@@ -20,49 +19,13 @@ public abstract class User {
         this.isPremium = isPremium;
     }
 
-    public String getName() {
-        return name;
+    public void login() {
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void register() {
     }
 
-    public String getPassword() {
-        return password;
+    public void changePassword() {
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getID() {
-        return user;
-    }
-
-    public void setID(String ID) {
-        this.user = user;
-    }
-
-    public ArrayList<ResourcesLibrary> getLoan() {
-        return loan;
-    }
-
-    public void setLoan(ArrayList<ResourcesLibrary> loan) {
-        this.loan = loan;
-    }
-
-    public abstract void login();
-
-    public abstract void register();
-
-    public abstract void changePassword();
-
-    public boolean isPremium() {
-        return isPremium;
-    }
-
-    public void setPremium(boolean premium) {
-        isPremium = premium;
-    }
 }

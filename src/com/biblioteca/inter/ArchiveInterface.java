@@ -1,8 +1,10 @@
 package com.biblioteca.inter;
 
+import java.util.HashMap;
+import java.util.List;
+
 public interface ArchiveInterface {
+    void export(List<HashMap<String, String>> data);
 
-    void export();
-
-    void read();
+    List<HashMap<String, String>> importData();
 }
