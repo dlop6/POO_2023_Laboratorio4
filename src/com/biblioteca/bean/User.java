@@ -7,6 +7,7 @@ public abstract class User {
     private String password;
     private String user;
 
+
     private boolean isPremium;
 
     ArrayList<ResourcesLibrary> loan = new ArrayList<ResourcesLibrary>();
