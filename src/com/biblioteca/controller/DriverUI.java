@@ -18,6 +18,7 @@ public class DriverUI {
         int option = sc.nextInt();
         sc.nextLine(); // consume the newline character
         Login login = new Login();
+        CSVController csvController = new CSVController();
         switch (option) {
             case 1:
                 User user = login.login(options);
@@ -77,6 +78,7 @@ public class DriverUI {
                 break;
             case 2:
                 login.register(options);
+                csvController.exportUsuarios(options);
                 break;
             case 3:
                 System.out.println("Gracias por usar el sistema de la Biblioteca");
