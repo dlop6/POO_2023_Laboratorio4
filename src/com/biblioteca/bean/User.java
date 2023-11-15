@@ -1,23 +1,31 @@
 package com.biblioteca.bean;
 
-import java.util.ArrayList;
+import com.biblioteca.inter.MaterialMethods;
 
-public abstract class User {
+
+public abstract class User implements MaterialMethods {
     private String name;
     private String password;
-    private String user;
+    private String userID;
+    public boolean isPremium;
 
 
-    private boolean isPremium;
+    
 
-    ArrayList<ResourcesLibrary> loan = new ArrayList<ResourcesLibrary>();
-
-    public User(String name, String password, String user, ArrayList<ResourcesLibrary> loan, boolean isPremium) {
+    public User(String name, String password, String user, boolean isPremium) {
         this.name = name;
         this.password = password;
-        this.user = user;
-        this.loan = loan;
+        this.userID = user;
         this.isPremium = isPremium;
+    }
+
+
+    public void createLoan() {
+        System.out.println("Creando préstamo");
+    }
+
+    public void addResource() {
+        System.out.println("Agregando recurso");
     }
 
     public String getName() {
@@ -37,26 +45,14 @@ public abstract class User {
     }
 
     public String getID() {
-        return user;
+        return userID;
     }
 
     public void setID(String ID) {
-        this.user = user;
+        this.userID = ID;
     }
 
-    public ArrayList<ResourcesLibrary> getLoan() {
-        return loan;
-    }
 
-    public void setLoan(ArrayList<ResourcesLibrary> loan) {
-        this.loan = loan;
-    }
-
-    public abstract void login();
-
-    public abstract void register();
-
-    public abstract void changePassword();
 
     public boolean isPremium() {
         return isPremium;
@@ -64,5 +60,9 @@ public abstract class User {
 
     public void setPremium(boolean premium) {
         isPremium = premium;
+    }
+
+
+    public void showResources() {
     }
 }

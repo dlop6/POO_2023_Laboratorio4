@@ -1,6 +1,5 @@
 package com.biblioteca.controller;
 
-public class BaseUserController {
-
+public class PremiumMenu {
     
 }

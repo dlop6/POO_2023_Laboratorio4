@@ -1,19 +1,20 @@
 package com.biblioteca.bean;
 
-public class ResourcesLibrary {
+public class Article {
 
     private String name;
     private String ISBN;
 
     private String type;
 
-    private double price;
+    private String loanedBy; // ID del usuario que lo tiene prestado
 
-    public ResourcesLibrary(String name, String ISBN, String type, double price) {
+    public Article(String name, String ISBN, String type, String loanedBy) {
         this.name = name;
         this.ISBN = ISBN;
         this.type = type;
-        this.price = price;
+        this.loanedBy = loanedBy;
+        
     }
 
     public String getName() {
@@ -40,11 +41,4 @@ public class ResourcesLibrary {
         this.type = type;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
 }

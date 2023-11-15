@@ -1,0 +1,6 @@
+id, name, password, isPremium
+1, Usuario1, Contraseña1, true
+2, Usuario2, Contraseña2, false
+3, Usuario3, Contraseña3, true
+4, Usuario4, Contraseña4, false
+5, Usuario5, Contraseña5, true
